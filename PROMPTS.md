@@ -1,14 +1,22 @@
-# AI Conversation Records
+# \# AI Conversation Records
 
-This file records raw, unedited project conversations or public chat links.
-AI-generated summaries are not substitutes for the original records.
+# 
 
-## Conversation 1
+# This file provides links to original project conversations.
 
-Tool: Perplexity
-Dates: 2026-10-24 and 2026-10-25
+# AI-generated summaries are not substitutes for the original records.
 
-PENDING: Paste the original conversation below or insert its public
-share link, verified while logged out.
+# 
 
-This placeholder is not a completed conversation record.
+# \## Conversation 1 — Perplexity
+
+# 
+
+# Tool: Perplexity
+
+# 
+
+# Conversation link:
+
+# https://www.perplexity.ai/search/54249cb7-4f66-470b-a818-bd7469f3220c
+

@@ -1,0 +1,9 @@
+Recorded: 2026-10-25T21:18:52+05:30
+
+Python: Python 3.10.0
+
+Node: v24.22.1
+
+npm: 11.19.1
+
+Git: git version 2.42.0.windows.2

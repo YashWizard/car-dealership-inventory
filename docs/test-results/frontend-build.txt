@@ -1,0 +1,14 @@
+
+> driveledger-frontend@1.0.0 build
+> vite build
+
+[36mvite v8.3.5 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 26 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.58 kB │ gzip:  0.34 kB
+dist/assets/index-CWWJSfl6.css   32.40 kB │ gzip:  6.76 kB
+dist/assets/index-Tfoai_L-.js   164.66 kB │ gzip: 53.06 kB
+
+[32m✓ built in 352ms[39m
