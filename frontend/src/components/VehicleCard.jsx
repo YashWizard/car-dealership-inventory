@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CarArt from "./CarArt";
+import VehicleImage from "./VehicleImage";
 
 const currency = new Intl.NumberFormat("en-IN", {
   style: "currency",
@@ -23,8 +23,8 @@ export default function VehicleCard({
     <article className="vehicle-card">
       <div className="vehicle-art">
         <span className="category-tag">{vehicle.category}</span>
-        <span className="art-caption">ILLUSTRATIVE ARTWORK</span>
-        <CarArt className="car-drawing" />
+        <span className="art-caption">REPRESENTATIVE IMAGE</span>
+        <VehicleImage identity={`${vehicle.make} ${vehicle.model}`} />
       </div>
 
       <div className="p-5">

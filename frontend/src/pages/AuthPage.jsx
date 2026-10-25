@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { useAuth } from "../auth/AuthContext";
-import CarArt from "../components/CarArt";
+import VehicleImage from "../components/VehicleImage";
 
 export default function AuthPage() {
   const { signIn, sessionMessage } = useAuth();
@@ -52,12 +52,12 @@ export default function AuthPage() {
           </p>
 
           <div className="auth-car mt-8">
-            <CarArt className="w-full text-teal-500" />
+            <VehicleImage hero />
           </div>
         </div>
 
         <p className="text-xs leading-6 text-slate-400">
-          Inventory demonstration · No payment processing · Original illustrative artwork
+          Inventory demonstration · No payment processing · Representative automotive photography
         </p>
       </section>
 

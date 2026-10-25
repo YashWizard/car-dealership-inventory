@@ -258,7 +258,7 @@ export default function DashboardPage() {
         )}
 
         <footer className="border-t border-slate-200 py-6 text-center text-xs leading-6 text-slate-500">
-          DriveLedger · Prices in INR · Illustrative artwork only.
+          DriveLedger · Prices in INR · Images are representative, not actual inventory photos.
           <br />
           Purchase changes inventory; this demonstration does not process payments.
         </footer>
