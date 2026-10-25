@@ -1,7 +1,37 @@
-"""Application entry point."""
-from fastapi import FastAPI
+"""Application startup, middleware, and routers."""
+import os
+from contextlib import asynccontextmanager
 
-app = FastAPI(title="Car Dealership Inventory API")
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from app.database import Base, engine
+from app.auth import router as auth_router
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    Base.metadata.create_all(bind=engine)
+    yield
+
+
+app = FastAPI(
+    title="Car Dealership Inventory API",
+    version="0.1.0",
+    lifespan=lifespan,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        os.getenv("FRONTEND_ORIGIN", "http://localhost:5173"),
+    ],
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type"],
+)
+
+app.include_router(auth_router)
 
 
 @app.get("/api/health")
