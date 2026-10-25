@@ -1,4 +1,4 @@
-"""Application startup, middleware, and routers."""
+"""Application startup, middleware, and router configuration."""
 import os
 from contextlib import asynccontextmanager
 
@@ -7,6 +7,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import Base, engine
 from app.auth import router as auth_router
+from app.vehicles import router as vehicles_router
+from app.inventory import router as inventory_router
 
 
 @asynccontextmanager
@@ -32,6 +34,8 @@ app.add_middleware(
 )
 
 app.include_router(auth_router)
+app.include_router(vehicles_router)
+app.include_router(inventory_router)
 
 
 @app.get("/api/health")
